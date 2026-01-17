@@ -1,0 +1,28 @@
+// cities.js - ලංකාවේ සියලුම ප්‍රදේශ දත්ත
+export const slLocations = {
+    "Ampara": ["Ampara Town", "Kalmunai", "Sainthamaruthu", "Akkaraipattu", "Sammanthurai", "Pottuvil", "Uhana"],
+    "Anuradhapura": ["Anuradhapura Town", "Kekirawa", "Medawachchiya", "Tambuttegama", "Eppawala", "Mihintale", "Galenbindunuwewa", "Nochchiyagama"],
+    "Badulla": ["Badulla Town", "Bandarawela", "Haputale", "Mahiyanganaya", "Welimada", "Ella", "Hali Ela", "Passara"],
+    "Batticaloa": ["Batticaloa Town", "Kattankudy", "Eravur", "Valaichchenai", "Oddamavadi"],
+    "Colombo": ["Colombo 1-15", "Dehiwala", "Mount Lavinia", "Moratuwa", "Nugegoda", "Maharagama", "Kottawa", "Piliyandala", "Homagama", "Avissawella", "Battaramulla", "Malabe", "Rajagiriya", "Kaduwela", "Kolonnawa", "Ratmalana"],
+    "Galle": ["Galle Town", "Hikkaduwa", "Ambalangoda", "Elpitiya", "Karapitiya", "Bentota", "Baddegama", "Ahangama"],
+    "Gampaha": ["Gampaha Town", "Negombo", "Kelaniya", "Kiribathgoda", "Kadawatha", "Wattala", "Ja-Ela", "Minuwangoda", "Divulapitiya", "Mirigama", "Veyangoda", "Nittambuwa", "Ragama", "Kandana"],
+    "Hambantota": ["Hambantota Town", "Tangalle", "Ambalantota", "Tissamaharama", "Beliatta", "Middeniya"],
+    "Jaffna": ["Jaffna Town", "Chavakachcheri", "Nallur", "Kankesanthurai", "Point Pedro", "Velanai"],
+    "Kalutara": ["Kalutara Town", "Panadura", "Horana", "Bandaragama", "Matugama", "Aluthgama", "Beruwala", "Wadduwa"],
+    "Kandy": ["Kandy Town", "Peradeniya", "Katugastota", "Gampola", "Nawalapitiya", "Kundasale", "Digana", "Pilimathalawa", "Akurana", "Wattegama"],
+    "Kegalle": ["Kegalle Town", "Mawanella", "Warakapola", "Rambukkana", "Ruwanwella", "Yatiyanthota", "Deraniyagala"],
+    "Kilinochchi": ["Kilinochchi Town", "Paranthan", "Pooneryn"],
+    "Kurunegala": ["Kurunegala Town", "Kuliyapitiya", "Narammala", "Wariyapola", "Pannala", "Mawathagama", "Polgahawela", "Ibbagamuwa", "Nikaweratiya"],
+    "Mannar": ["Mannar Town", "Nanattan", "Madhu"],
+    "Matale": ["Matale Town", "Dambulla", "Sigiriya", "Galewela", "Ukuwela"],
+    "Matara": ["Matara Town", "Weligama", "Dikwella", "Akuressa", "Hakmana", "Kamburupitiya", "Deniyaya"],
+    "Monaragala": ["Monaragala Town", "Wellawaya", "Bibile", "Kataragama", "Buttala"],
+    "Mullaitivu": ["Mullaitivu Town", "Puthukkudiyiruppu", "Mallavi"],
+    "Nuwara Eliya": ["Nuwara Eliya Town", "Hatton", "Talawakele", "Ginigathena", "Ragala"],
+    "Polonnaruwa": ["Polonnaruwa Town", "Kaduruwela", "Hingurakgoda", "Medirigiriya"],
+    "Puttalam": ["Puttalam Town", "Chilaw", "Wennappuwa", "Marawila", "Dankotuwa", "Anamaduwa", "Kalpitiya"],
+    "Ratnapura": ["Ratnapura Town", "Embilipitiya", "Balangoda", "Pelmadulla", "Eheliyagoda", "Kuruwita"],
+    "Trincomalee": ["Trincomalee Town", "Kinniya", "Kantale", "Mutur"],
+    "Vavuniya": ["Vavuniya Town", "Cheddikulam"]
+};

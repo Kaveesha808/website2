@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | ගෙදර සේවය</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="form-wrapper">
+        <div class="form-box">
+            <h2 style="text-align: center; margin-bottom: 20px; color: var(--primary-color);">
+                <i class="fas fa-hard-hat"></i> ලියාපදිංචි වන්න
+            </h2>
+            <p style="text-align: center; margin-bottom: 30px; color: #666;">ඔබේ සේවාව අපගේ වෙබ් අඩවියට ඇතුළත් කරන්න.</p>
+
+            <form id="registerForm">
+                <label>ඔබේ නම</label>
+                <input type="text" id="name" placeholder="සම්පූර්ණ නම" required>
+                
+                <label>කරන රැකියාව / සේවාව</label>
+                <select id="category" required>
+                    <option value="">සේවාව තෝරන්න...</option>
+                    <option value="Electrician">Electrician (විදුලි කාර්මික)</option>
+                    <option value="Plumber">Plumber (නල කාර්මික)</option>
+                    <option value="Mason">Mason (මේසන් වැඩ)</option>
+                    <option value="Carpenter">Carpenter (වඩු කාර්මික)</option>
+                    <option value="Painter">Painter (තීන්ත වැඩ)</option>
+                    <option value="Welder">Welder (වෙල්ඩින් වැඩ)</option>
+                    <option value="Aluminum">Aluminum Fabricator (ඇලුමිනියම් වැඩ)</option>
+                    
+                    <option value="AC Repair">A/C Repair (A/C අලුත්වැඩියාව)</option>
+                    <option value="Fridge Repair">Fridge/Washing Machine Repair</option>
+                    <option value="CCTV">CCTV Technician (කැමරා පද්ධති)</option>
+                    <option value="Computer Repair">Computer/Phone Repair</option>
+
+                    <option value="Driver">Driver (රියදුරු)</option>
+                    <option value="Cleaner">Cleaner (පිරිසිදු කරන්නන්)</option>
+                    <option value="Garden">Garden Helper (වතු වැඩ)</option>
+                    <option value="Cook">Cook/Catering (ආහාර පිසීම)</option>
+                    <option value="Baby Sitter">Baby Sitter (දරුවන් බලාගැනීම)</option>
+                    <option value="Movers">Movers (බඩු ප්‍රවාහනය)</option>
+                    <option value="Tutor">Tuition Teacher (උත්තර පන්ති)</option>
+                    <option value="Beauty">Salon/Beautician (රූපලාවන්‍ය)</option>
+                    <option value="Other">වෙනත්</option>
+                </select>
+
+                <label>දුරකථන අංකය</label>
+                <input type="tel" id="phone" placeholder="07XXXXXXXX" required>
+                
+               <label>ඔබ ඉන්නා දිස්ත්‍රික්කය සහ නගරය</label>
+<div style="display: flex; gap: 10px;">
+    <select id="districtSelect" required style="width: 50%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+        <option value="">දිස්ත්‍රික්කය තෝරන්න...</option>
+    </select>
+
+    <select id="citySelect" required disabled style="width: 50%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+        <option value="">නගරය තෝරන්න...</option>
+    </select>
+</div>
+                
+                <label>වැඩිදුර විස්තර (කෙටියෙන්)</label>
+                <textarea id="desc" rows="3" placeholder="ඔබ කරන විශේෂ වැඩ ගැන ලියන්න..."></textarea>
+                
+                <button type="submit" class="submit-btn">දත්ත ඇතුළත් කරන්න</button>
+            </form>
+            
+            <a href="index.html" style="display: block; text-align: center; margin-top: 20px; text-decoration: none; color: #666;">
+                <i class="fas fa-arrow-left"></i> ආපසු මුල් පිටුවට
+            </a>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

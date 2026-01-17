@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ගෙදර සේවය | Home Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">
+            <i class="fas fa-home"></i> ගෙදර සේවය
+        </a>
+        <a href="register.html" class="nav-btn">
+            <i class="fas fa-user-plus"></i> වැඩ භාරගන්න
+        </a>
+    </header>
+
+    <section class="hero">
+        <h1>ඔබට අවශ්‍ය සේවාව සොයාගන්න</h1>
+        <p>විදුලි කාර්මික, නල කාර්මික, මේසන් වැනි ඕනෑම සේවාවක් සපයන අය ඔබේ ප්‍රදේශයෙන්ම සොයාගන්න.</p>
+        
+        <div class="search-container">
+            <select id="locationFilter" onchange="filterServices()">
+                <option value="">සියලු ප්‍රදේශ</option>
+                </select>
+            <input type="text" id="searchInput" placeholder="සොයන්න... (උදා: Electrician)" onkeyup="filterServices()">
+            <div class="search-icon" onclick="filterServices()">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">අලුත්ම සේවා සපයන්නන්</h2>
+        
+        <div id="servicesList" class="services-grid">
+            <div class="loader">
+                <i class="fas fa-spinner fa-spin"></i> දත්ත ලෝඩ් වෙමින් පවතී...
+            </div>
+        </div>
+    </div>
+
+    <div id="reviewModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Reviews</h2>
+            
+            <div id="reviewsList" class="review-list"></div>
+
+            <form id="addReviewForm">
+                <h3>ඔබේ අදහස:</h3>
+                <input type="hidden" id="currentProviderId">
+                <input type="text" id="reviewerName" placeholder="ඔබේ නම" required>
+                <input type="tel" id="reviewerPhone" placeholder="ඔබේ දුරකථන අංකය (පරීක්ෂා කිරීම සඳහා පමණි)" required style="width:100%; padding:10px; margin:5px 0; border:1px solid #ddd; border-radius:5px;">
+                <select id="reviewStars">
+                    <option value="5">⭐⭐⭐⭐⭐ (5)</option>
+                    <option value="4">⭐⭐⭐⭐ (4)</option>
+                    <option value="3">⭐⭐⭐ (3)</option>
+                    <option value="2">⭐⭐ (2)</option>
+                    <option value="1">⭐ (1)</option>
+                </select>
+                <textarea id="reviewComment" placeholder="විස්තරය..." required></textarea>
+                <button type="submit" class="submit-btn">Review එක දාන්න</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Gedara Sevaya. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
